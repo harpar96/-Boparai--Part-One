@@ -1,0 +1,91 @@
+/* Base styles */
+body, h1, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333; /* Default text color, change as needed */
+  }
+  
+  /* Color Scheme */
+  :root {
+    --header-bg-color: #F2F2F2;
+    --button-bg-color: #20a8b4;
+    --button-text-color: #ff5c0f;
+    --link-hover-color: #61c386;
+    --code-text-color: #ff5c0f;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: var(--header-bg-color);
+    color: var(--button-text-color);
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333; /* Default link color, change as needed */
+  }
+  
+  /* Hover states */
+  nav a:hover {
+    color: var(--link-hover-color);
+  }
+  
+  /* Hero section styles */
+  .hero-section {
+    text-align: center;
+    padding: 2rem;
+    background-color: #fff; /* Assuming white background for hero section */
+    color: #333; /* Default hero section text color, change as needed */
+  }
+  
+  /* Button styles */
+  .btn-learn-more {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    padding: 0.5rem 2rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-learn-more:hover {
+    background-color: var(--link-hover-color);
+    color: #fff; /* Assuming white text on hover, change as needed */
+  }
+  
+  /* "Learn to" and "Code" text colors */
+  .learn-to {
+    color: var(--button-text-color);
+  }
+  
+  .code {
+    color: var(--code-text-color);
+  }
+  
+  /* Media query for desktop styles */
+  @media (min-width: 768px) {
+    .hero-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .btn-learn-more {
+      margin-left: 2rem;
+    }
+  
+    .hero-image {
+      display: block;
+      max-width: 50%;
+      height: auto;
+    }
+  }
+  
